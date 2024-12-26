@@ -1,0 +1,29 @@
+*** Settings ***
+Documentation     A test suite with a single test for SmartFitAutomation
+...               Created by hats' Robotcorder
+Library           Selenium2Library    timeout=10
+
+*** Variables ***
+${BROWSER}    chrome
+${SLEEP}    3
+
+*** Test Cases ***
+SmartFitAutomation test
+    Open Browser    http://dev-sfit.vvdncloud.com/login    ${BROWSER}
+    Input Text    //input[@id="username"]    tenant1@gmail.com
+    Input Text    //input[@id="password"]    ***
+    Click Element    //button[@class="login-btn btn-primary"]
+    Click Element    xpath=(//span)[10]
+    Click Element    xpath=(//span[@class="mat-mdc-button-touch-target"])[3]
+    Click Element    //button[@class="btn-primary icon-btn"]
+    Click Element    xpath=(//span[@class="file-name"])[3]
+    Click Element    //mat-icon[@class="mat-icon notranslate mat-mdc-tooltip-trigger small-icon material-icons mat-ligature-font mat-icon-no-color"]
+    Input Text    //input[@class="ng-untouched ng-valid ng-dirty"]    Testing
+    Click Element    xpath=(//span[@class="mat-mdc-button-touch-target"])[2]
+    Click Element    xpath=(//li[@class="ng-star-inserted"])[2]
+    Click Element    xpath=(//span[@class="file-name"])[8]
+    Click Element    //mat-icon[@class="mat-icon notranslate mat-mdc-tooltip-trigger small-icon material-icons mat-ligature-font mat-icon-no-color"]
+    Input Text    //input[@class="ng-untouched ng-valid ng-dirty"]    Trest.robot
+    Click Element    xpath=(//span[@class="file-name"])[9]
+
+    Close Browser
