@@ -9,21 +9,34 @@ ${SLEEP}    3
 
 *** Test Cases ***
 SmartFitAutomation test
-    Open Browser    http://dev-sfit.vvdncloud.com/login    ${BROWSER}
-    Input Text    //input[@id="username"]    tenant1@gmail.com
-    Input Text    //input[@id="password"]    ***
-    Click Element    //button[@class="login-btn btn-primary"]
+    Open Browser    http://dev-sfit.vvdncloud.com/dashboard    ${BROWSER}
+    Click Element    //mat-toolbar[@class="mat-toolbar header-container mat-toolbar-single-row"]
     Click Element    xpath=(//span)[10]
-    Click Element    xpath=(//span[@class="mat-mdc-button-touch-target"])[3]
-    Click Element    //button[@class="btn-primary icon-btn"]
-    Click Element    xpath=(//span[@class="file-name"])[3]
-    Click Element    //mat-icon[@class="mat-icon notranslate mat-mdc-tooltip-trigger small-icon material-icons mat-ligature-font mat-icon-no-color"]
-    Input Text    //input[@class="ng-untouched ng-valid ng-dirty"]    Testing
-    Click Element    xpath=(//span[@class="mat-mdc-button-touch-target"])[2]
-    Click Element    xpath=(//li[@class="ng-star-inserted"])[2]
-    Click Element    xpath=(//span[@class="file-name"])[8]
-    Click Element    //mat-icon[@class="mat-icon notranslate mat-mdc-tooltip-trigger small-icon material-icons mat-ligature-font mat-icon-no-color"]
-    Input Text    //input[@class="ng-untouched ng-valid ng-dirty"]    Trest.robot
-    Click Element    xpath=(//span[@class="file-name"])[9]
+    Click Element    xpath=(//span)[14]
+    Click Element    xpath=(//span)[16]
+    Input Text    //input[@id="mat-input-7"]    smartfit
+    Input Text    //input[@id="mat-input-7"]
+    Click Element    xpath=(//span)[13]
+    Click Element    xpath=(//span)[10]
+    Click Element    //span[@class="mat-mdc-button-touch-target"]
+    Click Element    //mat-form-field[@class="mat-mdc-form-field mat-mdc-tooltip-trigger ng-tns-c1205077789-59 ng-star-inserted mat-mdc-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-hide-placeholder mat-primary ng-untouched ng-pristine ng-invalid"]
+    Input Text    //input[@id="mat-input-10"]    dscsaz
+    Click Element    //mat-option[@id="mat-option-15"]
+    Click Element    //div[@class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"]
+    Click Element    //span[@class="mat-mdc-select-placeholder mat-mdc-select-min-line ng-tns-c3393473648-63 ng-star-inserted"]
+    Click Element    //mat-option[@id="mat-option-29"]
+    Click Element    //div[@class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"]
+    Click Element    //span[@class="mat-mdc-select-placeholder mat-mdc-select-min-line ng-tns-c3393473648-65 ng-star-inserted"]
+    Click Element    //span[@class="mdc-list-item__primary-text"]
+    Click Element    //div[@class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"]
+    Input Text    //input[@id="mat-input-11"]    dszx
+    Click Element    //label[@for="mat-input-12"]
+    Input Text    //input[@id="mat-input-12"]    zxaszxcsazx
+    Input Text    //input[@id="mat-input-13"]    ZXSxasZZ
+    Click Element    //div[@class="mat-mdc-form-field-infix ng-tns-c1205077789-69"]
+    Input Text    //input[@id="mat-input-14"]    ***
+    Input Text    //textarea[@id="mat-input-15"]    rfweszxfdwes
+    Click Element    //button[@class="btn-primary"]
+    Click Element    //div[@class="backdrop ng-star-inserted"]
 
     Close Browser
